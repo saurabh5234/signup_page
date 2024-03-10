@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color:#131720;
+    --secondary-color:#fff;
+    --padding-inline-section:20px ;
+}
+
+/* Utility Classes */
+
+.container{
+    max-width: 1920px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+    overflow: hidden;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul{
+    list-style: none;
+}
+
+.primary-btn{
+    background-color: var(--primary-color);
+    padding: 0.5rem 2rem;
+    border-radius: 0.2rem;
+    color: var(--secondary-color);
+}
+
+.secondary-btn{
+    background-color: var(--secondary-color);
+    padding: 0.5rem 2rem;
+    border-radius: 0.2rem;
+    color: var(--primary-color) ;
+    /* padding: 0.5rem 2rem; */
+   
+}
+
+.small-bold-text{
+    font-weight: 700;
+}
+
+/* NAv BAr */
+
+.nav-toggle{
+    display: none;
+}
+.main-nav{
+    justify-content: space-between;
+    margin-top: 1px;
+    position: relative;
+}
+
+.hover-links{
+    color: var(--primary-color);
+}
+
+.company-links ul{
+    justify-content: start;
+    gap: 40px;
+}
+
+.company-links{
+    flex-basis: 730px;
+  
+}
+
+.text-center {
+   text-align: center;
+   margin-top: 5rem;
+   padding-bottom: 10px;
+   font-size: 30px;
+}
+
+/* Login Container */
+.head-text h1{
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 70px;
+}
+.signupbox{
+    background-image: url(rectangle.png);
+    height: 400px;
+    width: 970px;   
+    border-radius: 5px; 
+}
+.container_login{
+    
+     margin-right: 50%;  
+     position: absolute; 
+}
+.image{
+    height: 400px;
+    width: 450px;
+    position: relative;
+}
+.container_f{
+    margin-left: 50%;
+    width:500px;
+    position: absolute;
+}
+.main-user-info{
+    color: #fff;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    position: relative;
+}
+.head-text h3
+{
+    color: #fff;
+    padding-top: 20px;
+    margin-right: 75%;
+    padding-bottom: 10px;
+}
+.f-pass {
+   padding-left: 80px;
+}
+.main-user-info a{
+    text-decoration: none;
+    color: #fff;
+}
+.checkbox{
+    text-align: left;
+    color: #fff;
+}
+.checkbox button{
+    margin-top: 10px;
+    width: 350px;
+    height: 30px;
+    border-radius: 5px;
+}
+.foot{
+    text-align: center;
+    color: #fff;
+}
+.foot a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.head-text_card{
+    text-align: center;
+    padding-top: 30px;
+}
+.card-text_f{
+    font-weight: 900;
+    font-size: 2em;
+    text-align: center;
+}
+.card-text{
+    text-align: center;
+}
+.card {
+    display: inline-block;
+    margin-left: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .card-group{
+    margin-left: 210px;
+  }
+  .card-img-top{
+    margin-left: 30px;
+  }
+
+/* Footer */
+
+footer{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    margin-top: 3rem;
+}
+
+.footer-container{
+    justify-content: flex-end;
+    gap: 5rem;
+    padding: 2rem 14rem 2rem  0;
+}
+
+.c-1 > li > a{
+    color: var(--secondary-color);
+}
+li{
+    margin-block: 1rem;
+}
+
+
+.mini-footer{
+    margin-block: 2rem;
+    justify-content: space-between;
+}
+
+.social-media{
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.social-media a{
+    color: var(--secondary-color);
+}
+
+.social-icons{
+    gap:1rem;
+    justify-content: center;
+}
+
+@media (max-width:35em) {
+    .nav-toggle{
+        display: block;
+        margin-right: 20px;
+    }
+    .main-nav{
+        overflow: initial;
+       
+    }
+    .company-links{
+        position: absolute;
+        background-color: white;
+        left: -100%;
+        top: 100%;
+        width: 100%;
+        z-index: 999;
+        padding-block: 20px;
+        transition: 0.2s ease-in-out;
+    }
+
+    .company-links.active{
+        left: 0 !important;
+    }
+
+    .company-links ul{
+        flex-direction: column;
+    }
+
+  /* Login */
+
+  container_login{
+    width: 90vw;
+    height: 100%;
+  }
+
+  .login-form{
+    width: 70vw;
+  }
+
+  .l-btn{
+    margin-bottom: 3rem;
+  }
+
+  input{
+   width: 100%;
+  }
+  
+  /* footer */
+
+  .footer-container{
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+  }
+  .mini-footer{
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+  }
+
+}
+
